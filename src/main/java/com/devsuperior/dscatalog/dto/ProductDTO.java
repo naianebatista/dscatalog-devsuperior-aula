@@ -3,7 +3,6 @@ package com.devsuperior.dscatalog.dto;
 import com.devsuperior.dscatalog.entities.Category;
 import com.devsuperior.dscatalog.entities.Product;
 
-import javax.persistence.Column;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -72,7 +71,6 @@ public class ProductDTO implements Serializable {
     public Double getPrice() {
         return price;
     }
-
     public void setPrice(Double price) {
         this.price = price;
     }
