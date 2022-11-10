@@ -117,8 +117,7 @@ public class Product implements Serializable {
         result = 31 * result + (description != null ? description.hashCode() : 0);
         result = 31 * result + (price != null ? price.hashCode() : 0);
         result = 31 * result + (imgUrl != null ? imgUrl.hashCode() : 0);
-        result = 31 * result + (date != null ? date.hashCode() : 0);
-        result = 31 * result + (categories != null ? categories.hashCode() : 0);
+         result = 31 * result + (categories != null ? categories.hashCode() : 0);
         return result;
     }
 }

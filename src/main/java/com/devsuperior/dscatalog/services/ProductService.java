@@ -61,7 +61,7 @@ public class ProductService {
         }
     }
 
-    private void copyDtoToEntity(ProductDTO dto, Product entity) {
+    private void copyDtoToEntity(ProductDTO dto, Product entity) {  //copia os dados do dto para a entidade
         entity.setName(dto.getName());
         entity.setDescription(dto.getDescription());
         entity.setDate(dto.getDate());
@@ -75,7 +75,6 @@ public class ProductService {
         }
 
     }
-
 
     @Transactional
      public void delete(Long id){
