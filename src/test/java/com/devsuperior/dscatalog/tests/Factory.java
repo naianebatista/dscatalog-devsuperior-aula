@@ -11,12 +11,16 @@ public class Factory {            //classe responsável por instanciar objetos
         Product product = new Product(1L,"Phone","Good Phone",800.0,
                 "https://img.com/img.png",
                 Instant.parse("2022-11-08T03:00:00Z"));
-        product.getCategories().add(new Category(2L,"Electronics"));
+        product.getCategories().add(createCategory());
         return product;
     }
-
     public static ProductDTO createProductDto(){
         Product product = new Product();
         return new ProductDTO(product,product.getCategories());
+    }
+
+    public static Category createCategory(){
+        return new Category(1L,"Electronics");
+
     }
 }
