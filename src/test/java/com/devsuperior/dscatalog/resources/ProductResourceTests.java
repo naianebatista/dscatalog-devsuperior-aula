@@ -106,8 +106,8 @@ public class ProductResourceTests {
         ResultActions result =
                 mockMvc.perform(put("/products/{id}",existingId)
                         .content(jsonBody)
-                        .contentType(MediaType.APPLICATION_JSON) //o tippo de corpo da requisicao:json
-                        .accept(MediaType.APPLICATION_JSON));  //tipo resposta resposta:json
+                        .contentType(MediaType.APPLICATION_JSON) //o tipo de corpo da requisicao:json
+                        .accept(MediaType.APPLICATION_JSON));  //tipo resposta :json
         result.andExpect(status().isOk());
         result.andExpect(jsonPath("$.id").doesNotExist());
         result.andExpect(jsonPath("$.name").doesNotExist());
